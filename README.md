@@ -30,41 +30,16 @@ If you want to know in detail about the detailed explanation of how to develop y
 
 <!-- files -->
 ## 1. Files
-* **stacking.py**: Contains an example from scratch about Stacked Generalization method
-* **blending.py**: Contains an example from scratch about Blending, a variation from Stacked Generalization method.
-* **voting.py**: Contains an example about Voting method by using the scikit-learn module.
+* **decision_tree**: Contains the files to build the decision_tree component as well as the Dockerfile used to generate the component image.
+* **logistic_regression**: Contains the files to build the logistic_regression component as well as the Dockerfile used to generate the component image.
+* **download_data**: Contains the files to build the download_data component as well as the Dockerfile used to generate the component image.
+* **pipeline.py**: Contains the definition of the pipeline, which when executed generates the ``FirstPipeline.yaml`` file.
 
 
 <!-- how-to-use -->
 ## 2. How to use
-For running ``stacking.py``:
-
-```SH
-python stacking.py
-```
-
-For running ``blending.py``:
-
-```SH
-python blending.py
-```
-
-For running ``voting.py``:
-
-```SH
-python voting.py
-```
-
-however, I recommend you to work with a virtual environment, in this case I am using pipenv. So in order to install the dependencies located in the ``Pipfile`` you just need to type:
-
-```SH
-pipenv install
-```
-and then
-
-```SH
-pipenv shell
-```
+* It is recommended to have previously installed ``kfp`` as well as configured kubeflow on top of kubernets or a minimal version such as ``minikube``.
+* All the images are accesible in Docker Hub: https://hub.docker.com/repository/docker/fernandolpz/only-tests
 
 <!-- contributing -->
 ## 3. Contributing
